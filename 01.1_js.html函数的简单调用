@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button onclick="d1()">点击一下</button>
+	<script>
+		function d1(){
+			alert("欢迎光临！")
+		}
+		document.write("<h4>我爱梅梅</h4>")
+	</script>
+	<script src="01js.js">
+	</script>
+</body>
+</html>
