@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>乘方和开根号</title>
+</head>
+<body>
+	<script>
+		var c = Math.pow(3,4);
+		var d = Math.sqrt(81);
+		console.log(c);
+		console.log(d);
+		alert(c);
+		alert(d);
+		// parseInt：字符串中提取数值、数值取整
+		//重点：在一个包含数值的字符串中，若数值在字符串的头部，parseInt会提取整数值；若数值不在字符串的头部，则会返回NaN
+		// ------->365
+		var kt1 = parseInt("365天"); 
+		// ---->NaN
+		var kt2 = parseInt("一年有365天")
+		var gt = parseInt(365.55)
+		console.log(kt1);
+		alert(kt2);
+		console.log(gt);
+		var ht = prompt("please input your name:")
+	</script>
+</body>
+</html>365
