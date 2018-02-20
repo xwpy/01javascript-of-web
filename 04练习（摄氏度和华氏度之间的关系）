@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fahrenheit degree and centigrade</title>
+</head>
+<body>
+	<script>
+// 		parseInt() 将字符串转为整数
+// 		parseFloat 将字符串转为浮点数（小数）
+//		重点：得到用户输入的摄氏温度，用Centigrade变量来接收
+//		接收的东西是“字符串”，必须通过parseFloat才能进行运算
+		var Centigrade = parseFloat(prompt("please input centigrade:"));
+		var Fahrenheit = (9/5)*Centigrade + 32;
+		alert("Centigrade is " + Fahrenheit);
+	</script>
+</body>
+</html>
