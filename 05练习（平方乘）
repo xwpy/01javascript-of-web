@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var result = Math.pow((23 + Math.pow(5, 7))/45, 2);
+		console.log(result);
+
+	</script>
+</body>
+</html>
