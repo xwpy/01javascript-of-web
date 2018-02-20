@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var result = (123+45*78)/(34+53)-9*(324-34);
+		console.log(result);
+	</script>
+</body>
+</html>
