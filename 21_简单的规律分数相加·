@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简单的分数相加</title>
+</head>
+<body>
+	<!-- problem: 3/2 +4/3 +5/4 +...+ 101/100 -->
+	<script type="text/javascript">
+		var sum = 0;
+		for(i = 2; i<=100; i++){
+			sum = sum + (i + 1)/i ;
+		}
+		console.log(sum);
+	</script>
+</body>
+</html>
