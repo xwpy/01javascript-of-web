@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var result = prompt("请输入一个三位数：");
+		var a = result[0];
+		var b = result[1];
+		var c = result[2];
+		var result1 = parseInt(a) + parseInt(b) + parseInt(c);
+		alert(result1);
+	</script>
+</body>
+</html>
