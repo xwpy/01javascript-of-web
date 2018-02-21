@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>利用正则</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 用户输入一个数字，列出所有它能够整除的数字
+		var num = parseInt(prompt("please enter a number :"));
+		// md现在只想到这种效率低的方法(穷举法)
+		for(i = 1; ;i++){
+			if (num%i == 0){
+				console.log(i);
+			}
+		}
+	</script>
+</body>
+</html>
