@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 质数：就是只能被1和自己整除。
+		// ideal：质数相当于就两个质数
+		// 先初始化计数为1，再计数增加
+
+
+
+		
+		var count = 0;
+		var num = parseInt(prompt("please enter a prime number:"));
+		for(i = 1; i<=num; i++){
+			if (num%i == 0){
+				count++;
+			}
+		}
+		if(count == 2){
+			alert("这个数是质数");
+		}  
+		else{
+			alert("That number is not a prime number");
+		}
+		
+	</script>
+</body>
+</html>
