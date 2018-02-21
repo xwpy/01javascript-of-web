@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		//请将偶数100，拆写成两个质数的和。列出所有情况
+		//比如3、97
+		//比如11、89
+
+		//算法思路就是，从2开始试，如果2是质数，且100-2也是质数，那么输出
+		// 首先遍历100个数
+		for(i = 1 ; i <= 100 ; i++){
+			if (judgeprimenumber(i) && judgeprimenumber(100 - i)){
+				console.log(i + "和" + (100 - i))
+				}
+			}
+
+		// 判断是否是因数（因为质数就两个因数）
+		// 这个num其实就是i的形参
+		var sum = 0 ;//累加器
+		function judgeyshu(num){
+			// 此处遍历每个数的因数
+			for(j = 1 ,j <= num ; j++){
+				if (num % j == 0){
+					sum++;
+				}
+			}
+			return sum;
+		}
+
+		function judgeprimenumber(num){
+			if (judgeprimenumber(num) == 2){
+				return true ;
+			}
+			else{
+				return false ;
+			}
+		}
+	</script>
+</body>
+</html>(a){
+	
+}
