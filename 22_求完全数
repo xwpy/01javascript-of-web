@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>求完全数之和</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//如果一个数恰好等于它的因数之和，则称该数为“完全数”
+		
+		//寻找1~10000之内的所有完美数;
+		// i代表需要需找的完美数;
+		// 重点：利用自顶而下结合函数的方法
+		for (i = 1 ; i <= 10000 ; i++){
+			if (i == sumofy(i)){
+				console.log(i) ;
+			}
+		}
+		// j代表需要寻找的因数
+		// 找出因数，并且累加因数
+		function sumofy(a){
+			var sum = 0 ;//累加器
+			for(j = 1 ; j < a ; j++){
+				if(a % j == 0){
+				sum = sum + j ;
+				}
+			}
+			return sum ;
+		}
+
+		// 失败的程序
+		// var sum = 0;//重点：累加器
+		// for(perfect = 1; perfect <=10000; perfect++){
+		// 	for(fact = 1; fact < perfectr; fact++){
+		// 		if(perfect % fact == 0）{
+		// 			sum = sum + fact;
+		// 		}
+		// 	}
+		// }
+	</script>
+</body>
+</html>
