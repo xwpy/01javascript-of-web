@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>if</title>
+</head>
+<body>
+	<script>
+		// 用户输入一个数字，然后判断这个数字能否被5、6整除
+		var num = parseInt(prompt("please enter a number :"));
+		var a = num%5;
+		var b = num%6;
+		console.log(a);
+		if(a == 0 && b == 0){
+			alert("这个数字被5和可以6整除");
+		}else if(a == 0 && b != 0){
+			alert("这个数字只能被5整除，不能被6整除");
+		}else if(a != 0 && b == 0){
+			alert("这个数字只能被6整除，不能被5整除");
+		}
+	</script>
+</body>
+</html>
