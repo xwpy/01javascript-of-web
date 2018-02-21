@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 水仙花数是一种特殊的三位数，它的特点就是，每个数位的立方和，等于它本身,100~999之内，只有4个水仙花数，请找出来。 -->
+	<script type="text/javascript">
+	// 方法一：利用取余和除法
+		// for(i = 100; i <= 999; i++){
+		// 	// 重点：此处是n位数的每个元素的求法
+		// 	var fristly = parseInt(i/100);
+		// 	var secondly = parseInt(i%100/10);
+		// 	var thirdly = parseInt(i%10);
+		// 	if(Math.pow(fristly,3) + Math.pow(secondly,3) + Math.pow(thirdly,3) == i){
+		// 		console.log(i);
+		// 	}
+		// }
+
+		// 方法二：利用切片
+		for(i = 100; i <= 999; i++){
+			// 重点：此处是n位数的每个元素的求法
+			var st = String(i)
+			var fristly = Number(st[0]);
+			var secondly = Number(st[1]);
+			var thirdly = Number(st[2]);
+			if(Math.pow(fristly,3) + Math.pow(secondly,3) + Math.pow(thirdly,3) == i){
+				console.log(i);
+			}
+		}
+
+		// var i = 865 ;
+		// console.log(i%100) ;
+		// var a = 123 ;
+		// // 基本类型转换见博客
+		// var b = String(a) ;
+		// // 重点：js中切片用于处理字符串
+		// console.log(b[2]) ;
+	</script>
+</body>
+</html>
