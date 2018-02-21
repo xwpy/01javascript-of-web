@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = parseInt(prompt("please enter the frist number:"));
+		var b = parseInt(prompt("please enter the secondly number:"))
+		bignum(a, b);
+		function bignum(a, b){
+			if(a > b){
+				return a ;
+			}
+			else{
+				return b ;
+			}
+		}
+		
+	</script>
+</body>
+</html>
